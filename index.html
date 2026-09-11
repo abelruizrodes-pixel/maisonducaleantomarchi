@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Ducale Antomarchi de Morsiglia & Ajaccio | Titre Souverain & Héritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F3E5AB;
+            --gold-dark: #997A15;
+            --gold-metallic: linear-gradient(135deg, #ECC86C 0%, #D4AF37 50%, #8A6E18 100%);
+            --gold-border: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            
+            --blue-deep: #070B14;
+            --blue-navy: #0D1527;
+            --blue-regal: #141E36;
+            --blue-card: rgba(13, 21, 39, 0.85);
+            --blue-card-hover: rgba(20, 30, 54, 0.95);
+            
+            --burgundy: #58111A;
+            --parchment: #F8F4EB;
+            --parchment-muted: #D9D2C5;
+            --text-gold: #E6CA65;
+            
+            --font-cinzel: 'Cinzel', serif;
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Montserrat', sans-serif;
+            
+            --shadow-regal: 0 15px 35px rgba(0, 0, 0, 0.6);
+            --shadow-gold: 0 0 25px rgba(212, 175, 55, 0.25);
+            --border-subtle: 1px solid rgba(212, 175, 55, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--blue-deep);
+            color: var(--parchment);
+            font-family: var(--font-serif);
+            font-size: 19px;
+            line-height: 1.8;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%),
+                radial-gradient(circle at 80% 40%, rgba(88, 17, 26, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(20, 30, 54, 0.4) 0%, transparent 70%);
+        }
+
+        /* Top Bar */
+        .top-banner {
+            background: linear-gradient(90deg, #050810, #141E36, #050810);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 8px 24px;
+            font-family: var(--font-cinzel);
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-align: center;
+            color: var(--gold-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-banner span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-banner a {
+            color: var(--gold-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .top-banner a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px var(--gold-primary);
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(7, 11, 20, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+        }
+
+        .brand-crest {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: 1px solid var(--gold-primary);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            object-fit: cover;
+        }
+
+        .brand-text h1 {
+            font-family: var(--font-cinzel);
+            font-size: 16px;
+            letter-spacing: 2.5px;
+            color: var(--parchment);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .brand-text p {
+            font-family: var(--font-sans);
+            font-size: 9px;
+            letter-spacing: 3px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: var(--font-cinzel);
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            color: var(--parchment-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--gold-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-btn-doc {
+            font-family: var(--font-cinzel);
+            font-size: 11px;
+            letter-spacing: 2px;
+            padding: 8px 18px;
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+            background: rgba(212, 175, 55, 0.08);
+            border-radius: 2px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-btn-doc:hover {
+            background: var(--gold-primary);
+            color: var(--blue-deep);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 94vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 24px 100px;
+            background: 
+                radial-gradient(circle at center, rgba(13, 21, 39, 0.75) 0%, rgba(7, 11, 20, 0.98) 100%),
+                url('images/chateau_stoppielli.jpg') center/cover no-repeat;
+            background-blend-mode: multiply;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, transparent 30%, rgba(7, 11, 20, 0.9) 90%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .hero-blason-wrap {
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-blason {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8)) drop-shadow(0 0 25px rgba(212,175,55,0.35));
+            animation: floatSlow 6s ease-in-out infinite;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .hero-motto-badge {
+            display: inline-block;
+            font-family: var(--font-cinzel);
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: var(--gold-light);
+            background: rgba(20, 30, 54, 0.85);
+            border: 1px solid var(--gold-primary);
+            padding: 6px 24px;
+            border-radius: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-family: var(--font-cinzel);
+            font-size: clamp(28px, 5vw, 54px);
+            font-weight: 800;
+            letter-spacing: 3px;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #F5E5C0 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(20px, 2.8vw, 28px);
+            font-style: italic;
+            color: var(--parchment-muted);
+            margin-bottom: 28px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-heir-badge {
+            background: rgba(88, 17, 26, 0.45);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            backdrop-filter: blur(10px);
+            padding: 16px 30px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .hero-heir-label {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .hero-heir-name {
+            font-family: var(--font-cinzel);
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            font-family: var(--font-cinzel);
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            padding: 16px 34px;
+            background: var(--gold-metallic);
+            color: #070B14;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 2px;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5);
+            color: #000;
+        }
+
+        .btn-secondary {
+            font-family: var(--font-cinzel);
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            padding: 16px 34px;
+            background: rgba(13, 21, 39, 0.85);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-light);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 2px;
+            box-shadow: var(--shadow-regal);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.15);
+            color: #FFF;
+            transform: translateY(-3px);
+        }
+
+        /* Generic Section Styling */
+        section {
+            padding: 100px 24px;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-tag {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: var(--font-cinzel);
+            font-size: clamp(28px, 3.8vw, 42px);
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--parchment);
+            margin-bottom: 16px;
+        }
+
+        .section-divider {
+            width: 90px;
+            height: 2px;
+            background: var(--gold-metallic);
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .section-divider::after {
+            content: '♦';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--blue-deep);
+            padding: 0 8px;
+            color: var(--gold-primary);
+            font-size: 12px;
+        }
+
+        .section-desc {
+            max-width: 750px;
+            margin: 0 auto;
+            color: var(--parchment-muted);
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Section 1: Aristocracia & Linaje de Apellidos */
+        .grid-philosophy {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .philosophy-text h3 {
+            font-family: var(--font-cinzel);
+            font-size: 28px;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .philosophy-text p {
+            margin-bottom: 18px;
+            color: var(--parchment-muted);
+            text-align: justify;
+        }
+
+        .philosophy-quote {
+            border-left: 3px solid var(--gold-primary);
+            padding: 16px 24px;
+            background: rgba(212, 175, 55, 0.05);
+            font-style: italic;
+            font-size: 21px;
+            color: var(--parchment);
+            margin-top: 25px;
+        }
+
+        .philosophy-visual {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: var(--shadow-regal);
+            cursor: pointer;
+        }
+
+        .philosophy-visual img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .philosophy-visual:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Surname Cards */
+        .surnames-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .surname-card {
+            background: var(--blue-card);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 4px;
+            padding: 32px 24px;
+            position: relative;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .surname-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold-metallic);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .surname-card:hover {
+            transform: translateY(-6px);
+            background: var(--blue-card-hover);
+            border-color: var(--gold-primary);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7), var(--shadow-gold);
+        }
+
+        .surname-card:hover::before {
+            opacity: 1;
+        }
+
+        .surname-icon {
+            font-size: 28px;
+            color: var(--gold-primary);
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .surname-name {
+            font-family: var(--font-cinzel);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 6px;
+            letter-spacing: 1.5px;
+        }
+
+        .surname-origin {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .surname-desc {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--parchment-muted);
+        }
+
+        /* Section 2: Crónica Histórica (Santa Elena -> Santiago de Cuba -> Palma Soriano) */
+        .chronicle-section {
+            background: linear-gradient(180deg, rgba(13, 21, 39, 0.95) 0%, rgba(7, 11, 20, 0.98) 100%);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .timeline-ducal {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline-ducal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, var(--gold-primary) 10%, var(--gold-primary) 90%, transparent);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 30px;
+            width: 16px;
+            height: 16px;
+            background: var(--blue-deep);
+            border: 3px solid var(--gold-primary);
+            border-radius: 50%;
+            z-index: 5;
+            box-shadow: 0 0 10px var(--gold-primary);
+        }
+
+        .timeline-item.left .timeline-dot {
+            right: -8px;
+        }
+
+        .timeline-item.right .timeline-dot {
+            left: -8px;
+        }
+
+        .timeline-card {
+            background: var(--blue-card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            padding: 28px;
+            box-shadow: var(--shadow-regal);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            border-color: var(--gold-primary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8), var(--shadow-gold);
+        }
+
+        .timeline-year {
+            font-family: var(--font-cinzel);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gold-primary);
+            display: inline-block;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        .timeline-title {
+            font-family: var(--font-cinzel);
+            font-size: 19px;
+            color: var(--parchment);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .timeline-body {
+            font-size: 16px;
+            color: var(--parchment-muted);
+            line-height: 1.6;
+        }
+
+        .timeline-highlight {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        /* Marriage Special Feature Box */
+        .marriage-feature {
+            margin-top: 50px;
+            background: linear-gradient(135deg, rgba(88, 17, 26, 0.35) 0%, rgba(13, 21, 39, 0.9) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            border-radius: 4px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .marriage-feature-img {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .marriage-feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .marriage-feature-img:hover img {
+            transform: scale(1.04);
+        }
+
+        .marriage-feature-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .marriage-feature-content h4 {
+            font-family: var(--font-cinzel);
+            font-size: 25px;
+            color: var(--gold-light);
+            margin-bottom: 14px;
+            line-height: 1.25;
+        }
+
+        .historical-feature {
+            margin-top: 40px;
+            background: rgba(13, 21, 39, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 4px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .historical-feature-img {
+            position: relative;
+            min-height: 380px;
+        }
+
+        .historical-feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .historical-feature-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .historical-feature-content h4 {
+            font-family: var(--font-cinzel);
+            font-size: 24px;
+            color: var(--gold-light);
+            margin-bottom: 14px;
+            line-height: 1.25;
+        }
+
+        .historical-badge-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .historical-badge {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            letter-spacing: 2px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold-primary);
+            text-transform: uppercase;
+        }
+
+        /* Section 3: Château de Stoppielli */
+        .chateau-hero {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .chateau-hero img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .chateau-hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(7, 11, 20, 0.95) 90%);
+            padding: 60px 40px 30px;
+        }
+
+        .chateau-hero-overlay h3 {
+            font-family: var(--font-cinzel);
+            font-size: 32px;
+            color: var(--parchment);
+            margin-bottom: 8px;
+        }
+
+        .chateau-hero-overlay p {
+            color: var(--gold-light);
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .chateau-specs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .chateau-spec-card {
+            background: var(--blue-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 24px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .chateau-spec-card i {
+            font-size: 30px;
+            color: var(--gold-primary);
+            margin-bottom: 12px;
+        }
+
+        .chateau-spec-card h5 {
+            font-family: var(--font-cinzel);
+            font-size: 16px;
+            color: var(--parchment);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .chateau-spec-card p {
+            font-size: 15px;
+            color: var(--parchment-muted);
+        }
+
+        /* Section 4: Old Money Lifestyle & Galería Editorial */
+        .lifestyle-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            background: var(--blue-card);
+            cursor: pointer;
+            aspect-ratio: 9/16;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .gallery-item.landscape {
+            aspect-ratio: 16/10;
+            grid-column: span 2;
+        }
+
+        .gallery-item.portrait-standard {
+            aspect-ratio: 4/5;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold-primary);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8), var(--shadow-gold);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 45%, rgba(7, 11, 20, 0.95) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0.95;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-category {
+            font-family: var(--font-sans);
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .gallery-title {
+            font-family: var(--font-cinzel);
+            font-size: 16px;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        /* Section 5: Documentos & Archivos Oficiales */
+        .doc-section {
+            background: linear-gradient(180deg, rgba(7, 11, 20, 0.98) 0%, rgba(13, 21, 39, 0.95) 100%);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 28px;
+            margin-bottom: 50px;
+        }
+
+        .doc-card {
+            background: var(--blue-card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-regal);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .doc-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold-primary);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8), var(--shadow-gold);
+        }
+
+        .doc-preview-wrap {
+            position: relative;
+            background: #000;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+        }
+
+        .doc-preview-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .doc-card:hover .doc-preview-wrap img {
+            transform: scale(1.05);
+        }
+
+        .doc-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(7, 11, 20, 0.85);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-light);
+            font-family: var(--font-cinzel);
+            font-size: 9px;
+            letter-spacing: 1.5px;
+            padding: 4px 10px;
+            border-radius: 2px;
+        }
+
+        .doc-info {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .doc-info h4 {
+            font-family: var(--font-cinzel);
+            font-size: 17px;
+            color: var(--gold-light);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .doc-info p {
+            font-size: 14px;
+            color: var(--parchment-muted);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .doc-btn-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .doc-btn-download {
+            flex: 1;
+            padding: 10px;
+            background: var(--gold-metallic);
+            color: #070B14;
+            font-family: var(--font-cinzel);
+            font-size: 11px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2px;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .doc-btn-download:hover {
+            color: #000;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+
+        .doc-btn-view {
+            padding: 10px 14px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-light);
+            font-family: var(--font-cinzel);
+            font-size: 11px;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .doc-btn-view:hover {
+            background: rgba(212, 175, 55, 0.25);
+            color: #fff;
+        }
+
+        /* Section 6: Heráldica Ducal Canónica */
+        .heraldry-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: center;
+            background: var(--blue-card);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            padding: 50px;
+            border-radius: 4px;
+            box-shadow: var(--shadow-regal);
+        }
+
+        .heraldry-display {
+            text-align: center;
+        }
+
+        .heraldry-display img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8)) drop-shadow(0 0 20px rgba(212,175,55,0.3));
+        }
+
+        .heraldry-details h3 {
+            font-family: var(--font-cinzel);
+            font-size: 26px;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+            line-height: 1.25;
+        }
+
+        .quarters-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .quarters-list li {
+            position: relative;
+            padding-left: 28px;
+            font-size: 16px;
+            color: var(--parchment-muted);
+            line-height: 1.5;
+        }
+
+        .quarters-list li::before {
+            content: '♦';
+            position: absolute;
+            left: 0;
+            color: var(--gold-primary);
+            font-size: 12px;
+            top: 4px;
+        }
+
+        .quarters-list strong {
+            color: var(--gold-light);
+            font-family: var(--font-cinzel);
+            font-size: 15px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(4, 7, 13, 0.96);
+            backdrop-filter: blur(20px);
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 82vh;
+            object-fit: contain;
+            border: 1px solid var(--gold-primary);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 30px rgba(212,175,55,0.3);
+            border-radius: 4px;
+        }
+
+        .lightbox-caption {
+            margin-top: 16px;
+            font-family: var(--font-cinzel);
+            font-size: 16px;
+            color: var(--gold-light);
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            font-size: 32px;
+            color: var(--parchment);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            color: var(--gold-primary);
+        }
+
+        /* Footer */
+        footer {
+            background: #04070D;
+            border-top: 1px solid rgba(212, 175, 55, 0.25);
+            padding: 60px 24px 40px;
+            text-align: center;
+        }
+
+        .footer-crest {
+            width: 70px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
+        }
+
+        .footer-title {
+            font-family: var(--font-cinzel);
+            font-size: 16px;
+            letter-spacing: 3px;
+            color: var(--parchment);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .footer-sub {
+            font-family: var(--font-serif);
+            font-size: 16px;
+            font-style: italic;
+            color: var(--gold-primary);
+            margin-bottom: 24px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-family: var(--font-cinzel);
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            color: var(--parchment-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-copyright {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: rgba(217, 210, 197, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-philosophy, .heraldry-container, .historical-feature, .marriage-feature {
+                grid-template-columns: 1fr;
+            }
+            .chateau-specs-grid {
+                grid-template-columns: 1fr;
+            }
+            .timeline-ducal::before {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+                text-align: left !important;
+            }
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+            }
+            .timeline-item.left .timeline-dot, .timeline-item.right .timeline-dot {
+                left: 12px;
+            }
+            .gallery-item.landscape {
+                grid-column: span 1;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Notice Bar -->
+    <div class="top-banner">
+        <span><i class="fas fa-crown"></i> ARCHIVES HISTORIQUES & TITRE SOUVERAIN DEPUIS 1804</span>
+        <span>CHÂTEAU DE STOPPIELLI (MORSIGLIA) · LUXEMBOURG · SANTIAGO DE CUBA</span>
+        <span><a href="documentos.html"><i class="fas fa-file-pdf"></i> PORTAL DOCUMENTAL PDF &rarr;</a></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero" class="brand">
+            <img src="images/blason_ducal.jpg" alt="Blasón Ducal Antomarchi" class="brand-crest">
+            <div class="brand-text">
+                <h1>Maison Ducale Antomarchi</h1>
+                <p>Morsiglia & Ajaccio</p>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#linaje">Esencia & Linaje</a></li>
+            <li><a href="#cronica">Crónica Dinástica</a></li>
+            <li><a href="#chateau">Château de Stoppielli</a></li>
+            <li><a href="#lifestyle">Modo de Vida</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#heraldica">Heráldica</a></li>
+        </ul>
+        <a href="documentos.html" class="nav-btn-doc"><i class="fas fa-scroll"></i> Certificados Oficiales</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-blason-wrap">
+                <img src="images/blason_ducal.jpg" alt="Armoiries Ducales Canoniques" class="hero-blason">
+            </div>
+            <div>
+                <span class="hero-motto-badge">« Virtute et Fide · De Morsiglia »</span>
+            </div>
+            <h1 class="hero-title">Maison Ducale Antomarchi</h1>
+            <p class="hero-subtitle">Duc de Morsiglia & Ajaccio · Pairie Impériale & Seigneurie Ancestrale de Stoppielli (1804)</p>
+            
+            <div class="hero-heir-badge">
+                <span class="hero-heir-label">Chef de Maison & Duc Titulaire</span>
+                <span class="hero-heir-name">S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei</span>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#cronica" class="btn-primary"><i class="fas fa-history"></i> Crónica Dinástica & Cuba</a>
+                <a href="#lifestyle" class="btn-secondary"><i class="fas fa-camera"></i> Galería Ducal</a>
+                <a href="documentos.html" class="btn-secondary" style="border-color: #ECC86C;"><i class="fas fa-download"></i> Descargar PDFs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Esencia de la Aristocracia & Los 4 Apellidos -->
+    <section id="linaje">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Noblesse de Sang & Devoir d'Excellence</span>
+                <h2 class="section-title">La Esencia de la Aristocracia</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">El verdadero «Old Money» no radica en la ostentación efímera, sino en la serenidad del tiempo, la dignidad del comportamiento y la preservación inquebrantable del patrimonio moral e histórico.</p>
+            </div>
+
+            <div class="grid-philosophy">
+                <div class="philosophy-text">
+                    <h3>El Código Intemporal del Aristócrata</h3>
+                    <p>La aristocracia histórica europea se fundamenta en un pacto tácito con los siglos. Frente al ruido de las fortunas improvisadas, el linaje encarna la sobriedad calculada, la elegancia sin esfuerzo (<em>sprezzatura</em>), el culto al intelecto y el mecenazgo humanista.</p>
+                    <p>Ser custodio de una casa ducal significa comprender que los títulos y las tierras son mandatos de honor, donde el estilo de vida es reflejo de un orden interior inquebrantable: desde la discreción en los salones y clubes privados de Europa hasta la fidelidad a los propios orígenes dinásticos.</p>
+                    <div class="philosophy-quote">
+                        «La nobleza no es un privilegio para presumir, sino un deber de mantener la más alta compostura moral, estética y cultural en cualquier circunstancia.»
+                    </div>
+                </div>
+                <div class="philosophy-visual" onclick="openLightbox('images/duke_bureau_decret.jpg', 'S.A.S. El Duque de Morsiglia en su Despacho Oficial con el Décret Impérial de 1804')">
+                    <img src="images/duke_bureau_decret.jpg" alt="El Duque en su Despacho Oficial">
+                </div>
+            </div>
+
+            <!-- Los 4 Apellidos Ilustres -->
+            <div class="section-header" style="margin-bottom: 40px;">
+                <span class="section-tag">Généalogie & Alliances</span>
+                <h3 style="font-family: var(--font-cinzel); font-size: 28px; color: var(--gold-light);">El Quatuor de Sangre de la Casa</h3>
+            </div>
+
+            <div class="surnames-grid">
+                <div class="surname-card">
+                    <i class="fas fa-chess-rook surname-icon"></i>
+                    <h4 class="surname-name">Antomarchi</h4>
+                    <span class="surname-origin">Córcega · Cap Corse & Morsiglia</span>
+                    <p class="surname-desc">Casa solariega inmemorial de Córcega, señores de Stoppielli. Estirpe de estadistas, científicos y diplomáticos unidos al destino imperial de Francia y depositarios de la dignidad ducal desde 1804.</p>
+                </div>
+
+                <div class="surname-card">
+                    <i class="fas fa-balance-scale surname-icon"></i>
+                    <h4 class="surname-name">Agostini</h4>
+                    <span class="surname-origin">Patriciado Corso-Genovés</span>
+                    <p class="surname-desc">Antiguo linaje patricio de magistrados, podestás y juristas insulares de la nobleza togada. Aportó a la Casa Ducal su tradición de prudencia de gobierno, leyes y alianzas mediterráneas.</p>
+                </div>
+
+                <div class="surname-card">
+                    <i class="fas fa-shield-alt surname-icon"></i>
+                    <h4 class="surname-name">Mattei</h4>
+                    <span class="surname-origin">Nobleza Militar de Cap Corse</span>
+                    <p class="surname-desc">Estirpe noble guerrera y administrativa arraigada en el norte corso. Reconocida por su bravura en la defensa costera contra corsarios berberiscos y su lealtad al honor del feudo familiar.</p>
+                </div>
+
+                <div class="surname-card">
+                    <i class="fas fa-gem surname-icon"></i>
+                    <h4 class="surname-name">Rodes</h4>
+                    <span class="surname-origin">Entronque Patrilineal & Europeo</span>
+                    <p class="surname-desc">Rama patrilineal de distinción europea y mediterránea que entronca con la Casa Ducal, uniendo la legitimidad histórica corsa con la proyección cosmopolita y aristocrática contemporánea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Crónica Dinástica (1804 -> François Antomarchi -> Santiago de Cuba & Palma Soriano) -->
+    <section id="cronica" class="chronicle-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Épopée Impériale & Terres d'Outre-Mer</span>
+                <h2 class="section-title">Crónica Dinástica & El Legado en Cuba</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Desde las Lettres Patentes de Napoleón I en Saint-Cloud hasta la boda en Cuba de François Antomarchi (Don Francisco) con Anne Marie Alexandrine Etienne (Doña Ana María) y sus tierras en Palma Soriano.</p>
+            </div>
+
+            <div class="timeline-ducal">
+                <!-- 1804: 1er Duque -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">1804</span>
+                        <h4 class="timeline-title">1er Duque: Jean-François Antomarchi Agostini</h4>
+                        <p class="timeline-body">Por Decreto Imperial en el Palacio de Saint-Cloud, S.M. Napoleón I confiere las <span class="timeline-highlight">Lettres Patentes de Érection Ducale</span> a Jean-François Antomarchi Agostini, confirmando el feudo de Morsiglia, el Château de Stoppielli y el blasón de 4 cuarteles con 7 plumas ducales.</p>
+                    </div>
+                </div>
+
+                <!-- 1819-1821: 2º Duque François Antommarchi en Santa Elena -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">1819 – 1821</span>
+                        <h4 class="timeline-title">2º Duque: Dr. François-Carlo Antommarchi en Santa Elena</h4>
+                        <p class="timeline-body">Brillante anatomista y médico personal del Emperador en su destierro de Longwood. Acompañó a Napoleón en su lecho de muerte, modeló la célebre <span class="timeline-highlight">Mascarilla Mortuoria</span> original y publicó las monumentales memorias *«Les Derniers Moments de Napoléon»*.</p>
+                    </div>
+                </div>
+
+                <!-- 1837: Entrada por el Puerto de Santiago de Cuba -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">1837</span>
+                        <h4 class="timeline-title">Entrada por el Puerto de Santiago de Cuba</h4>
+                        <p class="timeline-body">Tras recorrer Europa y Norteamérica, el Dr. François Antommarchi arriba al Caribe. Los <span class="timeline-highlight">archivos marítimos y portuarios de Santiago de Cuba</span> registran su solemne entrada, donde fue recibido con los más altos honores por las autoridades coloniales y la élite caribeña.</p>
+                    </div>
+                </div>
+
+                <!-- 1837-1838: Boda en Cuba y Nombres Españolizados -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">1837 – 1838</span>
+                        <h4 class="timeline-title">Enlace en Cuba: Don Francisco & Doña Ana María</h4>
+                        <p class="timeline-body">Contrajo matrimonio solemne con <span class="timeline-highlight">Anne Marie Alexandrine Etienne</span>. En los registros eclesiales y notariales de la Isla, sus nombres se españolizaron formalmente, siendo conocidos y reverenciados por la sociedad criolla como <span class="timeline-highlight">«Don Francisco»</span> y <span class="timeline-highlight">«Doña Ana María»</span>.</p>
+                    </div>
+                </div>
+
+                <!-- 1838: Tierras y Haciendas en Palma Soriano -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">1838</span>
+                        <h4 class="timeline-title">Las Tierras de Palma Soriano & Filantropía</h4>
+                        <p class="timeline-body">Don Francisco adquiere y consolida extensas fincas y plantaciones rústicas en <span class="timeline-highlight">Palma Soriano (San Antonio y El Palmar)</span>. Abre dispensarios médicos donde practica cirugías de cataratas gratuitas a los pobladores humildes, dejando una huella imborrable.</p>
+                    </div>
+                </div>
+
+                <!-- Siglos XX - XXI: Transmisión y Heredero Actual -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-year">Época Actual</span>
+                        <h4 class="timeline-title">Transmisión & S.A.S. Abel Antonio Rodes Antomarchi</h4>
+                        <p class="timeline-body">El patrimonio dinástico, la memoria documental y los derechos de la Casa se transmiten de generación en generación en línea directa hasta el actual Jefe de la Casa y Duque de Morsiglia: <span class="timeline-highlight">S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei</span>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matrimonio Histórico: Don Francisco y Doña Ana María -->
+            <div class="marriage-feature">
+                <div class="marriage-feature-img" onclick="openLightbox('images/boda_francisco_anamaria_cuba.jpg', 'Daguerrotipo Histórico del Matrimonio en Cuba: François Antomarchi (Don Francisco) y Anne Marie Alexandrine Etienne (Doña Ana María)')">
+                    <img src="images/boda_francisco_anamaria_cuba.jpg" alt="Boda de Don Francisco y Doña Ana María en Cuba">
+                </div>
+                <div class="marriage-feature-content">
+                    <div class="historical-badge-row">
+                        <span class="historical-badge"><i class="fas fa-ring"></i> Matrimonio Histórico</span>
+                        <span class="historical-badge"><i class="fas fa-church"></i> Santiago de Cuba</span>
+                        <span class="historical-badge"><i class="fas fa-book"></i> Registros Coloniales</span>
+                    </div>
+                    <h4>El Matrimonio en Cuba de François Antomarchi & Anne Marie Alexandrine Etienne</h4>
+                    <p style="font-size: 16px; color: var(--parchment-muted); margin-bottom: 14px;">
+                        Al establecerse en la sociedad colonial de Cuba, el ilustre médico imperial <strong>François Antomarchi</strong> se desposó con <strong>Anne Marie Alexandrine Etienne</strong>. Conforme al protocolo de la época en los libros de protocolo notarial y registros parroquiales de Santiago de Cuba, sus nombres fueron formalmente españolizados.
+                    </p>
+                    <p style="font-size: 16px; color: var(--parchment-muted); margin-bottom: 14px;">
+                        Desde entonces fueron conocidos con gran respeto y afecto como <strong style="color: var(--gold-light);">Don Francisco</strong> y <strong style="color: var(--gold-light);">Doña Ana María</strong>. De esta unión matrimonial y su arraigo en las haciendas cafetaleras de Palma Soriano nació la rama genealógica de la cual proviene la herencia transmitida hasta el actual Duque de Morsiglia.
+                    </p>
+                    <div style="font-size: 14px; font-style: italic; color: var(--gold-primary);">
+                        * Daguerrotipo original de época conservado en los archivos fiduciarios de la Casa Ducal.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Feature Box -->
+            <div class="historical-feature">
+                <div class="historical-feature-img" onclick="openLightbox('images/dr_francois_cuba.jpg', 'Dr. François Antomarchi (Don Francisco) en su Estudio en Cuba · Palma Soriano & Santiago de Cuba')" style="cursor: pointer;">
+                    <img src="images/dr_francois_cuba.jpg" alt="Dr François Antomarchi (Don Francisco) en Santiago de Cuba y Palma Soriano">
+                </div>
+                <div class="historical-feature-content">
+                    <div class="historical-badge-row">
+                        <span class="historical-badge"><i class="fas fa-anchor"></i> Puerto Santiago de Cuba</span>
+                        <span class="historical-badge"><i class="fas fa-mountain"></i> Palma Soriano</span>
+                        <span class="historical-badge"><i class="fas fa-heartbeat"></i> Filantropía Médica</span>
+                    </div>
+                    <h4>El Médico del Emperador y el Origen de la Herencia en Cuba</h4>
+                    <p style="font-size: 16px; color: var(--parchment-muted); margin-bottom: 14px;">El Dr. François-Carlo Antommarchi no solo fue el testigo clínico de los últimos días de Napoleón, sino un humanista de dimensión global. Al establecerse en el Oriente de Cuba, su presencia enlazó la historia napoleónica con las tierras fértiles de Santiago de Cuba y Palma Soriano.</p>
+                    <p style="font-size: 16px; color: var(--parchment-muted);">Los archivos notariales y de tierras rústicas de la región atestiguan el arraigo de las propiedades agrícolas familiares y la transmisión fiduciaria de esta noble herencia hacia las ramas descendientes que desembocan en el actual Duque de Morsiglia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Château de Stoppielli (Cap Corse) -->
+    <section id="chateau">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fief & Patrimoine Immémorial</span>
+                <h2 class="section-title">Château de Stoppielli · Morsiglia</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">El solar solariego del Ducado en los acantilados salvajes de Cap Corse, suspendido entre el cielo azul y el mar Tirreno.</p>
+            </div>
+
+            <div class="chateau-hero">
+                <img src="images/chateau_stoppielli.jpg" alt="Château de Stoppielli en Morsiglia">
+                <div class="chateau-hero-overlay">
+                    <h3>Château de Stoppielli</h3>
+                    <p>Feudo Ducal de Morsiglia · Cap Corse (Córcega)</p>
+                </div>
+            </div>
+
+            <div class="chateau-specs-grid">
+                <div class="chateau-spec-card">
+                    <i class="fas fa-monument"></i>
+                    <h5>Torre Atalaya Genovesa</h5>
+                    <p>Construcción fortificada de piedra sillar erigida para el vigía del golfo de Saint-Florent y la protección del feudo corso.</p>
+                </div>
+
+                <div class="chateau-spec-card">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h5>Viñedos de Moscatello</h5>
+                    <p>Terrazas ancestrales sobre bancales de piedra donde se cosecha el legendario vino moscatel de Cap Corse con denominación histórica.</p>
+                </div>
+
+                <div class="chateau-spec-card">
+                    <i class="fas fa-landmark"></i>
+                    <h5>Palacio Señorial</h5>
+                    <p>Salones de techos abovedados con frescos dieciochescos, biblioteca de tratados marítimos y archivos de la Casa Ducal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Old Money Lifestyle & Galería Editorial -->
+    <section id="lifestyle" style="background: rgba(13, 21, 39, 0.6);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">L'Art de Vivre Aristocratique</span>
+                <h2 class="section-title">El Modo de Vida Ducal</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Retrato visual del Duque: elegancia sobria, clubes privados exclusivos, navegación en Riva histórica por la Riviera, sastrería clásica y recepciones de gala.</p>
+            </div>
+
+            <div class="lifestyle-intro">
+                <p style="font-size: 19px; color: var(--parchment-muted); font-style: italic;">
+                    «El lujo genuino no se anuncia; se percibe en la caída de una franela inglesa, en el silencio de una biblioteca centenaria y en la naturalidad con la que se habita la historia.»
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- 1. En el Despacho Oficial con el Decreto (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/duke_bureau_decret.jpg', 'S.A.S. El Duque de Morsiglia · Despacho y Biblioteca Oficial con el Décret Impérial')">
+                    <img src="images/duke_bureau_decret.jpg" alt="El Duque en su Despacho Oficial">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Chancellerie Privée</span>
+                        <h4 class="gallery-title">Despacho Oficial & Décret Impérial</h4>
+                    </div>
+                </div>
+
+                <!-- 2. Boda Histórica Don Francisco y Doña Ana María en Cuba (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/boda_francisco_anamaria_cuba.jpg', 'Retrato Matrimonial Histórico · Don Francisco (Dr. François Antomarchi) y Doña Ana María (Anne Marie Alexandrine Etienne) en Cuba')">
+                    <img src="images/boda_francisco_anamaria_cuba.jpg" alt="Don Francisco y Doña Ana María">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Mémoire Historique</span>
+                        <h4 class="gallery-title">Don Francisco & Doña Ana María</h4>
+                    </div>
+                </div>
+
+                <!-- 3. Riva en la Riviera (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/duke_riva_riviera.jpg', 'S.A.S. El Duque de Morsiglia · Navegación en Lancha Clásica Riva por la Riviera & Cap Corse')">
+                    <img src="images/duke_riva_riviera.jpg" alt="El Duque en Riva Clásica">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Riviera & Riva Vintage</span>
+                        <h4 class="gallery-title">Navegación Mediterránea Clásica</h4>
+                    </div>
+                </div>
+
+                <!-- 4. Club Privado en Londres / Luxemburgo (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/duke_club_london.jpg', 'S.A.S. El Duque · Members Only Club Privado en Londres & Luxemburgo')">
+                    <img src="images/duke_club_london.jpg" alt="El Duque en Club Privado">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Private Members Club</span>
+                        <h4 class="gallery-title">Círculos Privados & Exclusividad</h4>
+                    </div>
+                </div>
+
+                <!-- 5. Brindis de Gala en Palacio (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/duke_tuxedo_toast.jpg', 'S.A.S. El Duque · Recepción de Gala en Palacio & Toast au Champagne')">
+                    <img src="images/duke_tuxedo_toast.jpg" alt="El Duque Brindis de Gala">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Grand Palais & Soirée</span>
+                        <h4 class="gallery-title">Recepción de Gala Soberana</h4>
+                    </div>
+                </div>
+
+                <!-- 6. Nuit de Fête & Krug Champagne (9:16) -->
+                <div class="gallery-item" onclick="openLightbox('images/duke_gala_krug.jpg', 'S.A.S. El Duque · Célébration Aristocratique & Krug Champagne')">
+                    <img src="images/duke_gala_krug.jpg" alt="El Duque Célébration Krug">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Vogue Hommes & Célébration</span>
+                        <h4 class="gallery-title">Elegancia Nocturna & Champagne</h4>
+                    </div>
+                </div>
+
+                <!-- 7. Salon Privado Landscape (Landscape) -->
+                <div class="gallery-item landscape" onclick="openLightbox('images/lifestyle_ducal_salon.jpg', 'Salón & Gran Biblioteca Dinástica · Residencia en Luxemburgo')">
+                    <img src="images/lifestyle_ducal_salon.jpg" alt="Salón Ducal Luxemburgo">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Interiores & Salones</span>
+                        <h4 class="gallery-title">Salón Privado & Biblioteca Dinástica</h4>
+                    </div>
+                </div>
+
+                <!-- 8. Equestrian (Portrait Standard) -->
+                <div class="gallery-item portrait-standard" onclick="openLightbox('images/lifestyle_equestrian.jpg', 'Tradición Ecuestre & Hacking Jacket en la Finca de Campo')">
+                    <img src="images/lifestyle_equestrian.jpg" alt="Estilo Ecuestre Old Money">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Sporting & Naturaleza</span>
+                        <h4 class="gallery-title">Tradición Ecuestre & Finca</h4>
+                    </div>
+                </div>
+
+                <!-- 9. Chateau Stoppielli View (Portrait Standard) -->
+                <div class="gallery-item portrait-standard" onclick="openLightbox('images/chateau_stoppielli.jpg', 'Château de Stoppielli al Atardecer · Cap Corse')">
+                    <img src="images/chateau_stoppielli.jpg" alt="Château de Stoppielli">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Patrimonio Soberano</span>
+                        <h4 class="gallery-title">Château de Stoppielli</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Documentos & Archivos Oficiales (con Descarga Directa PDF) -->
+    <section id="documentos" class="doc-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Archives Officielles & Actes d'État</span>
+                <h2 class="section-title">Salón de Tratados & Documentos</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Actos jurídicos, decretos imperiales de 1804 y diplomas de reconocimiento emitidos bajo el sello de la Maison Ducale para consulta y descarga.</p>
+            </div>
+
+            <div class="docs-grid">
+                <!-- Doc 1: Heredero -->
+                <div class="doc-card">
+                    <div class="doc-preview-wrap">
+                        <img src="images/doc_heritier_clean.jpg" alt="Diploma Heredero">
+                        <span class="doc-tag">PARCHEMIN MAÎTRE</span>
+                    </div>
+                    <div class="doc-info">
+                        <div>
+                            <h4>Diploma del Heredero</h4>
+                            <p>Acto solemne de investidura y confirmación de la dignidad ducal en S.A.S. Abel Antonio Rodes Antomarchi.</p>
+                        </div>
+                        <div class="doc-btn-group">
+                            <a href="pdf/Diploma_Heredero_Abel_Antonio_Rodes_Antomarchi.pdf" target="_blank" download class="doc-btn-download"><i class="fas fa-download"></i> PDF</a>
+                            <a href="images/doc_heritier_clean.jpg" target="_blank" class="doc-btn-view"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 2: Lettres Patentes 1804 -->
+                <div class="doc-card">
+                    <div class="doc-preview-wrap">
+                        <img src="images/doc_lettres_clean.jpg" alt="Lettres Patentes 1804">
+                        <span class="doc-tag">SCEAU IMPÉRIAL 1804</span>
+                    </div>
+                    <div class="doc-info">
+                        <div>
+                            <h4>Lettres Patentes 1804</h4>
+                            <p>Decreto de creación ducal otorgado por S.M. Napoleón I a Jean-François Antomarchi Agostini en Saint-Cloud.</p>
+                        </div>
+                        <div class="doc-btn-group">
+                            <a href="pdf/Lettres_Patentes_1804_Jean_Francois_Antomarchi.pdf" target="_blank" download class="doc-btn-download"><i class="fas fa-download"></i> PDF</a>
+                            <a href="images/doc_lettres_clean.jpg" target="_blank" class="doc-btn-view"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 3: Carte Or -->
+                <div class="doc-card">
+                    <div class="doc-preview-wrap">
+                        <img src="images/doc_carte_clean.jpg" alt="Carte d'Accreditation Or">
+                        <span class="doc-tag">MÉTAL PRÉCIEUX</span>
+                    </div>
+                    <div class="doc-info">
+                        <div>
+                            <h4>Carte d'Accréditation Or</h4>
+                            <p>Credencial metálica en oro macizo con sellos de seguridad diplomática y código de acreditación soberana.</p>
+                        </div>
+                        <div class="doc-btn-group">
+                            <a href="pdf/Carte_Or_Maison_Antomarchi.pdf" target="_blank" download class="doc-btn-download"><i class="fas fa-download"></i> PDF</a>
+                            <a href="images/doc_carte_clean.jpg" target="_blank" class="doc-btn-view"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 4: Décret Vélin -->
+                <div class="doc-card">
+                    <div class="doc-preview-wrap">
+                        <img src="images/doc_velin_clean.jpg" alt="Decret Imperial Velin">
+                        <span class="doc-tag">VÉLIN ENLUMINÉ</span>
+                    </div>
+                    <div class="doc-info">
+                        <div>
+                            <h4>Décret sur Vélin Enluminé</h4>
+                            <p>Texto canónico en vitela iluminada con capitulares doradas y sello de lacre de la Casa de Bonaparte.</p>
+                        </div>
+                        <div class="doc-btn-group">
+                            <a href="pdf/Decret_Imperial_Saint_Cloud_Velin.pdf" target="_blank" download class="doc-btn-download"><i class="fas fa-download"></i> PDF</a>
+                            <a href="images/doc_velin_clean.jpg" target="_blank" class="doc-btn-view"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="documentos.html" class="btn-primary" style="padding: 18px 45px; font-size: 13px;">
+                    <i class="fas fa-external-link-alt"></i> Abrir Portal de Descargas Documentales Completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Heráldica Canónica Oficial -->
+    <section id="heraldica">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Blasonnement & Science Héraldique</span>
+                <h2 class="section-title">El Blasón Ducal Maestro</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Armas plenas y canónicas de la Maison Ducale Antomarchi de Morsiglia & Ajaccio.</p>
+            </div>
+
+            <div class="heraldry-container">
+                <div class="heraldry-display">
+                    <img src="images/blason_ducal.jpg" alt="Blasón Ducal Oficial de 4 Cuarteles">
+                    <p style="font-family: var(--font-cinzel); font-size: 13px; letter-spacing: 2px; color: var(--gold-light); margin-top: 16px;">
+                        ARMOIRIES DUCALES OFFICIELLES (1804)
+                    </p>
+                </div>
+
+                <div class="heraldry-details">
+                    <h3>Descripción de los 4 Cuarteles Soberanos</h3>
+                    <ul class="quarters-list">
+                        <li>
+                            <strong>Cuartel I (Azur · Superior Izquierdo)</strong>
+                            <em>Testa Mora</em> de sable con tortillo de plata en la frente: Emblema inmemorial de la soberanía de Córcega y el señorío de Cap Corse.
+                        </li>
+                        <li>
+                            <strong>Cuartel II (Azur · Superior Derecho)</strong>
+                            <em>Tres Abejas de Oro en Faja</em>: Símbolo heráldico de la Dinastía Imperial Bonaparte y la gracia conferida por el Emperador.
+                        </li>
+                        <li>
+                            <strong>Cuartel III (Azur / Paisaje · Inferior Izquierdo)</strong>
+                            <em>Château de Stoppielli y Torre Atalaya de Morsiglia</em> sobre acantilados rocosos y mar de plata: El feudo territorial de origen.
+                        </li>
+                        <li>
+                            <strong>Cuartel IV (Azur · Inferior Derecho)</strong>
+                            <em>Águila Imperial Coronada</em> de oro armada sobre los rayos de Júpiter: La alta protección del Imperio Francés.
+                        </li>
+                    </ul>
+
+                    <div style="border-top: 1px solid rgba(212,175,55,0.25); padding-top: 18px;">
+                        <p style="font-size: 15px; color: var(--parchment-muted);">
+                            <strong style="color: var(--gold-primary);">Ornamentos Exteriores:</strong> Toque ducal de terciopelo negro con <strong>siete plumas de avestruz de plata</strong> (dignidad de Gran Duque del Imperio), manto de púrpura forrado de armiño, y collar con la divisa soberana: <em>«VIRTUTE ET FIDE · DE MORSIGLIA»</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="images/blason_ducal.jpg" alt="Crest" class="footer-crest">
+            <h3 class="footer-title">MAISON DUCALE ANTOMARCHI DE MORSIGLIA & AJACCIO</h3>
+            <p class="footer-sub">Sous la protection de la Souveraineté Historique · 1804</p>
+            
+            <div class="footer-links">
+                <a href="#hero">Inicio</a>
+                <a href="#linaje">Esencia & Linaje</a>
+                <a href="#cronica">Crónica Histórica & Cuba</a>
+                <a href="#chateau">Château de Stoppielli</a>
+                <a href="#lifestyle">Modo de Vida</a>
+                <a href="#documentos">Documentación</a>
+                <a href="documentos.html">Portal PDF</a>
+            </div>
+
+            <p class="footer-copyright">
+                © 1804 – 2026 Maison Ducale Antomarchi. Tous droits réservés. Archives d'État, Chancellerie Ducale & Conseil du Sceau.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal Component -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightboxImg" src="" alt="Amplified Image">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImg');
+            const cap = document.getElementById('lightboxCaption');
+            
+            img.src = src;
+            cap.innerText = caption;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close on ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

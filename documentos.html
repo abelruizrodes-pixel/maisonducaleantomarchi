@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+  <title>Chancellerie Ducale de Morsiglia | Archivo & Descarga de Documentos Oficiales en PDF</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;900&family=Cinzel+Decorative:wght@700;900&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- HTML2PDF CDN for instant PDF download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            imperial: {
+              gold: '#c5a059',
+              goldLight: '#f4e3b5',
+              goldDark: '#7e5d1e',
+              crimson: '#6b111e',
+              crimsonDark: '#38050c',
+              midnight: '#0a0f18',
+              navy: '#121b2b',
+              navyLight: '#1b283f',
+              parchment: '#faf6ed',
+              parchmentDark: '#e8dcbe'
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            cinzelDeco: ['"Cinzel Decorative"', 'serif'],
+            garamond: ['"EB Garamond"', 'serif'],
+            caslon: ['"Libre Caslon Text"', 'serif'],
+            script: ['"Pinyon Script"', 'cursive']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #0a0f18;
+      color: #e2e8f0;
+      font-family: 'Libre Caslon Text', serif;
+    }
+
+    .parchment-sheet {
+      background: #faf6ed;
+      background-image: 
+        radial-gradient(#e5d8bc 14%, transparent 15%),
+        radial-gradient(#d8c9a8 14%, transparent 15%);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+      color: #2b1d0c;
+    }
+
+    .wax-seal-real {
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle at 35% 35%, #b31d2c 0%, #680d16 65%, #300307 100%);
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.4), inset 0 -4px 8px rgba(0,0,0,0.8);
+      border: 3px solid #4a060d;
+    }
+
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .printable-target, .printable-target * {
+        visibility: visible;
+      }
+      .printable-target {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="selection:bg-imperial-gold selection:text-imperial-midnight antialiased min-h-screen flex flex-col">
+
+  <!-- ================= TOP NOTIFICATION ================= -->
+  <div class="bg-gradient-to-r from-imperial-crimsonDark via-imperial-crimson to-imperial-crimsonDark border-b border-imperial-gold/30 text-xs py-2 px-4 text-center tracking-[0.25em] uppercase font-cinzel text-imperial-goldLight flex items-center justify-center gap-3 no-print">
+    <span>⚜️ CHANCELLERIE DUCALE DE MORSIGLIA · ARCHIVES DU PREMIER EMPIRE</span>
+    <span class="hidden md:inline text-white/40">•</span>
+    <span class="hidden md:inline">PORTAL DE DESCARGA DE CARTAS PATENTES Y DOCUMENTOS NOTARIALES EN PDF</span>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-imperial-midnight/90 border-b border-imperial-gold/20 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full border border-imperial-gold/60 p-1 bg-gradient-to-b from-imperial-crimson to-imperial-midnight flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-imperial-gold text-[24px]">history_edu</span>
+        </div>
+        <div>
+          <div class="font-cinzelDeco font-bold text-lg text-imperial-gold tracking-wider">MORSIGLIA</div>
+          <div class="text-[9px] tracking-[0.25em] text-gray-400 uppercase font-cinzel">Cabinet des Sceaux & Titres</div>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="inline-flex items-center gap-1.5 text-xs font-cinzel text-gray-300 hover:text-imperial-gold transition-colors">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          <span>Volver al Portal Principal</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
+    
+    <!-- Title & Description -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-imperial-gold/40 bg-imperial-navy/70 text-xs font-cinzel text-imperial-gold tracking-widest uppercase mb-4">
+        <span>📜</span>
+        <span>REGISTRO OFICIAL DE CARTAS PATENTES & DIPLOMAS</span>
+        <span>📜</span>
+      </div>
+      <h1 class="font-cinzelDeco font-bold text-3xl sm:text-4xl text-white tracking-wide mb-3">
+        Documentos de Legitimidad y Patentes Ducales
+      </h1>
+      <p class="font-garamond text-lg text-gray-300 leading-relaxed">
+        Descarga e imprime en formato PDF de alta resolución los títulos de investidura, decretos imperiales de Saint-Cloud, credenciales metálicas y confirmaciones dinásticas de la <strong>Casa Ducal Antomarchi de Morsiglia</strong>.
+      </p>
+    </div>
+
+    <!-- DOCUMENT SELECTOR TABS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10 no-print">
+      <button onclick="switchDoc('diplome-heritier')" id="tab-diplome-heritier" class="doc-tab p-3.5 rounded-xl border border-imperial-gold bg-imperial-navy text-left transition-all shadow-lg ring-1 ring-imperial-gold/40">
+        <div class="text-[10px] font-cinzel text-imperial-gold uppercase tracking-wider mb-1">Actual · 2026</div>
+        <div class="font-cinzel font-bold text-xs text-white">Diploma Heredero S.A.S. Abel Antonio</div>
+      </button>
+
+      <button onclick="switchDoc('diplome-fondateur')" id="tab-diplome-fondateur" class="doc-tab p-3.5 rounded-xl border border-imperial-gold/30 bg-imperial-midnight/70 hover:bg-imperial-navy text-left transition-all">
+        <div class="text-[10px] font-cinzel text-gray-400 uppercase tracking-wider mb-1">Histórico · 1804</div>
+        <div class="font-cinzel font-bold text-xs text-gray-300">Investidura Jean-François Antomarchi</div>
+      </button>
+
+      <button onclick="switchDoc('carte-or')" id="tab-carte-or" class="doc-tab p-3.5 rounded-xl border border-imperial-gold/30 bg-imperial-midnight/70 hover:bg-imperial-navy text-left transition-all">
+        <div class="text-[10px] font-cinzel text-gray-400 uppercase tracking-wider mb-1">Acreditación</div>
+        <div class="font-cinzel font-bold text-xs text-gray-300">Tarjeta Metálica de Gran Oficial</div>
+      </button>
+
+      <button onclick="switchDoc('lettres-velin')" id="tab-lettres-velin" class="doc-tab p-3.5 rounded-xl border border-imperial-gold/30 bg-imperial-midnight/70 hover:bg-imperial-navy text-left transition-all">
+        <div class="text-[10px] font-cinzel text-gray-400 uppercase tracking-wider mb-1">Decreto Saint-Cloud</div>
+        <div class="font-cinzel font-bold text-xs text-gray-300">Manuscrito en Vitela Imperial</div>
+      </button>
+    </div>
+
+    <!-- ================= DOCUMENT DISPLAY & PDF GENERATION AREA ================= -->
+    
+    <!-- 1. DIPLOMA DEL HEREDERO S.A.S. ABEL ANTONIO (ACTUAL) -->
+    <div id="view-diplome-heritier" class="doc-view space-y-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-imperial-navy/80 border border-imperial-gold/30 shadow-xl backdrop-blur-md no-print">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 text-[10px] font-cinzel font-bold uppercase rounded bg-imperial-crimson text-imperial-goldLight border border-imperial-gold/40">Confirmación Actual</span>
+            <span class="text-xs text-gray-400 font-cinzel">· Registre Ducal MMXXVI</span>
+          </div>
+          <h2 class="font-cinzel text-lg text-imperial-gold font-bold">Confirmation de Titre et Reconnaissance Dynastique</h2>
+          <p class="text-xs text-gray-300 font-garamond mt-0.5">Expedido solemnemente en favor de <strong>S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei</strong>, Duque de Morsiglia.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="pdf/Diploma_Heredero_Abel_Antonio_Rodes_Antomarchi.pdf" download="Diploma_Ducal_Abel_Antonio_Rodes_Antomarchi.pdf" class="px-6 py-3 rounded-lg bg-gradient-to-r from-imperial-gold to-imperial-goldLight hover:brightness-110 text-imperial-midnight font-cinzel font-bold text-xs tracking-wider flex items-center gap-2 shadow-xl hover:scale-[1.02] transition-all">
+            <span class="material-symbols-outlined text-[20px]">download</span>
+            <span>Descargar PDF Oficial</span>
+          </a>
+          <button onclick="printImage('images/doc_heritier_clean.jpg')" class="px-4 py-3 rounded-lg border border-imperial-gold/50 hover:bg-imperial-gold/10 text-imperial-gold font-cinzel text-xs tracking-wider flex items-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[20px]">print</span>
+            <span>Imprimir</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pure Document Display (Without Frame / Without Table) -->
+      <div class="relative rounded-2xl overflow-hidden border border-imperial-gold/40 shadow-2xl bg-imperial-midnight/80 p-2 sm:p-4 max-w-5xl mx-auto flex flex-col items-center">
+        <div class="w-full text-center text-[10px] font-cinzel uppercase tracking-widest text-imperial-gold/70 py-1 mb-2 no-print">
+          Vista previa del Documento Puro (Pergamino Oficial con Sello de Cera)
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden shadow-2xl bg-[#faf6ed]">
+          <img src="images/doc_heritier_clean.jpg" alt="Diploma Ducal de S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei" class="w-full h-auto object-contain block mx-auto">
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. DIPLOMA FUNDACIONAL JEAN-FRANÇOIS ANTOMARCHI AGOSTINI (1804) -->
+    <div id="view-diplome-fondateur" class="doc-view space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-imperial-navy/80 border border-imperial-gold/30 shadow-xl backdrop-blur-md no-print">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 text-[10px] font-cinzel font-bold uppercase rounded bg-imperial-gold/20 text-imperial-goldLight border border-imperial-gold/40">Premier Empire · 1804</span>
+            <span class="text-xs text-gray-400 font-cinzel">· Conseil du Sceau des Titres</span>
+          </div>
+          <h2 class="font-cinzel text-lg text-imperial-gold font-bold">Lettres Patentes d'Investiture Ducale (1804)</h2>
+          <p class="text-xs text-gray-300 font-garamond mt-0.5">Concesión original por S.M.I. Napoleón I en favor de <strong>Jean-François Antomarchi Agostini</strong>.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="pdf/Lettres_Patentes_1804_Jean_Francois_Antomarchi.pdf" download="Lettres_Patentes_1804_Jean_Francois_Antomarchi.pdf" class="px-6 py-3 rounded-lg bg-gradient-to-r from-imperial-gold to-imperial-goldLight hover:brightness-110 text-imperial-midnight font-cinzel font-bold text-xs tracking-wider flex items-center gap-2 shadow-xl hover:scale-[1.02] transition-all">
+            <span class="material-symbols-outlined text-[20px]">download</span>
+            <span>Descargar PDF Oficial</span>
+          </a>
+          <button onclick="printImage('images/doc_investiture_clean.jpg')" class="px-4 py-3 rounded-lg border border-imperial-gold/50 hover:bg-imperial-gold/10 text-imperial-gold font-cinzel text-xs tracking-wider flex items-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[20px]">print</span>
+            <span>Imprimir</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pure Document Display -->
+      <div class="relative rounded-2xl overflow-hidden border border-imperial-gold/40 shadow-2xl bg-imperial-midnight/80 p-2 sm:p-4 max-w-5xl mx-auto flex flex-col items-center">
+        <div class="w-full text-center text-[10px] font-cinzel uppercase tracking-widest text-imperial-gold/70 py-1 mb-2 no-print">
+          Vista previa del Documento Puro (Pergamino Imperial con Gran Sello y Firmas de Napoleón & Cambacérès)
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden shadow-2xl bg-[#efe5cc]">
+          <img src="images/doc_investiture_clean.jpg" alt="Investidura Imperial de Jean-François Antomarchi Agostini" class="w-full h-auto object-contain block mx-auto">
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. TARJETA METÁLICA DE PROTOCOLO EN ORO (CARTE D'OR) -->
+    <div id="view-carte-or" class="doc-view space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-imperial-navy/80 border border-imperial-gold/30 shadow-xl backdrop-blur-md no-print">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 text-[10px] font-cinzel font-bold uppercase rounded bg-imperial-gold/20 text-imperial-goldLight border border-imperial-gold/40">Brevet d'Or Protocolar</span>
+            <span class="text-xs text-gray-400 font-cinzel">· Grandes Entrées</span>
+          </div>
+          <h2 class="font-cinzel text-lg text-imperial-gold font-bold">Brevet d'Immatriculation & Passeport Ducal d'Empire</h2>
+          <p class="text-xs text-gray-300 font-garamond mt-0.5">Placa de oro cepillado y acreditación imperial de Jean-François Antomarchi Agostini.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="pdf/Carte_Or_Maison_Antomarchi.pdf" download="Carte_Noblesse_Or_Jean_Francois_Antomarchi.pdf" class="px-6 py-3 rounded-lg bg-gradient-to-r from-imperial-gold to-imperial-goldLight hover:brightness-110 text-imperial-midnight font-cinzel font-bold text-xs tracking-wider flex items-center gap-2 shadow-xl hover:scale-[1.02] transition-all">
+            <span class="material-symbols-outlined text-[20px]">download</span>
+            <span>Descargar PDF Oficial</span>
+          </a>
+          <button onclick="printImage('images/doc_carte_clean.jpg')" class="px-4 py-3 rounded-lg border border-imperial-gold/50 hover:bg-imperial-gold/10 text-imperial-gold font-cinzel text-xs tracking-wider flex items-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[20px]">print</span>
+            <span>Imprimir</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pure Metal Card -->
+      <div class="relative rounded-2xl overflow-hidden border border-imperial-gold/40 shadow-2xl bg-imperial-midnight/80 p-2 sm:p-4 max-w-4xl mx-auto flex flex-col items-center">
+        <div class="w-full text-center text-[10px] font-cinzel uppercase tracking-widest text-imperial-gold/70 py-1 mb-2 no-print">
+          Vista previa del Documento Puro (Placa de Oro sin Fondo)
+        </div>
+        <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-transparent">
+          <img src="images/doc_carte_clean.jpg" alt="Tarjeta Metálica de Oro Antomarchi" class="w-full h-auto object-contain block mx-auto rounded-2xl">
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. MANUSCRITO EN VITELA IMPERIAL (LETTRES PATENTES) -->
+    <div id="view-lettres-velin" class="doc-view space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-imperial-navy/80 border border-imperial-gold/30 shadow-xl backdrop-blur-md no-print">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="px-2 py-0.5 text-[10px] font-cinzel font-bold uppercase rounded bg-imperial-gold/20 text-imperial-goldLight border border-imperial-gold/40">Décret Impérial de Saint-Cloud</span>
+            <span class="text-xs text-gray-400 font-cinzel">· Manuscrit Enlumine</span>
+          </div>
+          <h2 class="font-cinzel text-lg text-imperial-gold font-bold">Décret Impérial de Saint-Cloud sur Vélin (1804)</h2>
+          <p class="text-xs text-gray-300 font-garamond mt-0.5">Manuscrito iluminado con orla imperial y sello de cera de Cambacérès.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="pdf/Decret_Imperial_Saint_Cloud_Velin.pdf" download="Decret_Imperial_Saint_Cloud_Velin.pdf" class="px-6 py-3 rounded-lg bg-gradient-to-r from-imperial-gold to-imperial-goldLight hover:brightness-110 text-imperial-midnight font-cinzel font-bold text-xs tracking-wider flex items-center gap-2 shadow-xl hover:scale-[1.02] transition-all">
+            <span class="material-symbols-outlined text-[20px]">download</span>
+            <span>Descargar PDF Oficial</span>
+          </a>
+          <button onclick="printImage('images/doc_velin_clean.jpg')" class="px-4 py-3 rounded-lg border border-imperial-gold/50 hover:bg-imperial-gold/10 text-imperial-gold font-cinzel text-xs tracking-wider flex items-center gap-1.5 transition-all">
+            <span class="material-symbols-outlined text-[20px]">print</span>
+            <span>Imprimir</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pure Manuscript -->
+      <div class="relative rounded-2xl overflow-hidden border border-imperial-gold/40 shadow-2xl bg-imperial-midnight/80 p-2 sm:p-4 max-w-5xl mx-auto flex flex-col items-center">
+        <div class="w-full text-center text-[10px] font-cinzel uppercase tracking-widest text-imperial-gold/70 py-1 mb-2 no-print">
+          Vista previa del Documento Puro (Manuscrito Iluminado en Vitela)
+        </div>
+        <div class="relative w-full rounded-xl overflow-hidden shadow-2xl bg-[#f5ecdc]">
+          <img src="images/doc_velin_clean.jpg" alt="Decreto de Saint-Cloud Iluminado" class="w-full h-auto object-contain block mx-auto">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-imperial-midnight border-t border-imperial-gold/20 py-8 text-center text-gray-400 text-xs font-cinzel no-print">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <div>MAISON DUCALE ANTOMARCHI DE MORSIGLIA & AJACCIO</div>
+      <div class="text-[10px] text-gray-500">© MDCCCIV – MMXXVI · Chancellerie Ducale · Exportación y Registro Oficial</div>
+    </div>
+  </footer>
+
+  <!-- ================= LOGIC SCRIPT ================= -->
+  <script>
+    function switchDoc(docId) {
+      document.querySelectorAll('.doc-view').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.doc-tab').forEach(el => {
+        el.classList.remove('border-imperial-gold', 'bg-imperial-navy', 'ring-1', 'ring-imperial-gold/40');
+        el.classList.add('border-imperial-gold/30', 'bg-imperial-midnight/70');
+      });
+
+      const selectedView = document.getElementById('view-' + docId);
+      const selectedTab = document.getElementById('tab-' + docId);
+      if (selectedView) selectedView.classList.remove('hidden');
+      if (selectedTab) {
+        selectedTab.classList.remove('border-imperial-gold/30', 'bg-imperial-midnight/70');
+        selectedTab.classList.add('border-imperial-gold', 'bg-imperial-navy', 'ring-1', 'ring-imperial-gold/40');
+      }
+    }
+
+    function printImage(imageSrc) {
+      const printWindow = window.open('', '_blank');
+      printWindow.document.write(`
+        <html>
+          <head>
+            <title>Impression Officielle - Chancellerie Ducale</title>
+            <style>
+              @page { size: landscape; margin: 0; }
+              body { margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; background: white; }
+              img { width: 100vw; height: 100vh; object-fit: contain; }
+            </style>
+          </head>
+          <body onload="window.print(); window.close();">
+            <img src="${imageSrc}" />
+          </body>
+        </html>
+      `);
+      printWindow.document.close();
+    }
+  </script>
+</body>
+</html>
