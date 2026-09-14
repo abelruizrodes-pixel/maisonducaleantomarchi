@@ -138,7 +138,7 @@
 
         .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 24px;
             list-style: none;
         }
 
@@ -219,7 +219,7 @@
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 950px;
+            max-width: 980px;
             margin: 0 auto;
         }
 
@@ -274,7 +274,7 @@
             font-style: italic;
             color: var(--parchment-muted);
             margin-bottom: 28px;
-            max-width: 800px;
+            max-width: 820px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -311,7 +311,7 @@
         .hero-actions {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 16px;
             flex-wrap: wrap;
         }
 
@@ -319,7 +319,7 @@
             font-family: var(--font-cinzel);
             font-size: 12px;
             letter-spacing: 2.5px;
-            padding: 16px 34px;
+            padding: 16px 32px;
             background: var(--gold-metallic);
             color: #070B14;
             font-weight: 700;
@@ -343,7 +343,7 @@
             font-family: var(--font-cinzel);
             font-size: 12px;
             letter-spacing: 2.5px;
-            padding: 16px 34px;
+            padding: 16px 32px;
             background: rgba(13, 21, 39, 0.85);
             border: 1px solid var(--gold-primary);
             color: var(--gold-light);
@@ -421,7 +421,7 @@
         }
 
         .section-desc {
-            max-width: 750px;
+            max-width: 780px;
             margin: 0 auto;
             color: var(--parchment-muted);
             font-size: 20px;
@@ -486,6 +486,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
+            margin-bottom: 80px;
         }
 
         .surname-card {
@@ -551,6 +552,84 @@
             font-size: 16px;
             line-height: 1.6;
             color: var(--parchment-muted);
+        }
+
+        /* Genealogical Tree Visual Flow */
+        .genealogy-flow-wrap {
+            background: linear-gradient(135deg, rgba(13, 21, 39, 0.95) 0%, rgba(20, 30, 54, 0.85) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 4px;
+            padding: 40px;
+            box-shadow: var(--shadow-regal);
+            position: relative;
+        }
+
+        .tree-generations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            position: relative;
+        }
+
+        .gen-node {
+            background: rgba(7, 11, 20, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            padding: 24px 18px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .gen-node:hover {
+            border-color: var(--gold-primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8), var(--shadow-gold);
+        }
+
+        .gen-number {
+            font-family: var(--font-sans);
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .gen-name-primary {
+            font-family: var(--font-cinzel);
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 4px;
+        }
+
+        .gen-dates {
+            font-size: 13px;
+            color: var(--parchment-muted);
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .gen-spouse {
+            font-size: 14px;
+            color: var(--parchment);
+            border-top: 1px dashed rgba(212, 175, 55, 0.25);
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+        .gen-spouse i {
+            color: var(--gold-primary);
+            margin-right: 4px;
+        }
+
+        .gen-role {
+            font-size: 13px;
+            color: var(--parchment-muted);
+            margin-top: 6px;
+            line-height: 1.4;
         }
 
         /* Section 2: Crónica Histórica (Santa Elena -> Santiago de Cuba -> Palma Soriano) */
@@ -1278,6 +1357,7 @@
         </a>
         <ul class="nav-links">
             <li><a href="#linaje">Esencia & Linaje</a></li>
+            <li><a href="#arbol">Árbol Genealógico</a></li>
             <li><a href="#cronica">Crónica Dinástica</a></li>
             <li><a href="#chateau">Château de Stoppielli</a></li>
             <li><a href="#lifestyle">Modo de Vida</a></li>
@@ -1305,8 +1385,8 @@
             </div>
 
             <div class="hero-actions">
-                <a href="#cronica" class="btn-primary"><i class="fas fa-history"></i> Crónica Dinástica & Cuba</a>
-                <a href="#lifestyle" class="btn-secondary"><i class="fas fa-camera"></i> Galería Ducal</a>
+                <a href="#arbol" class="btn-primary"><i class="fas fa-sitemap"></i> Genealogía & Generaciones</a>
+                <a href="#cronica" class="btn-secondary"><i class="fas fa-history"></i> Crónica Dinástica</a>
                 <a href="documentos.html" class="btn-secondary" style="border-color: #ECC86C;"><i class="fas fa-download"></i> Descargar PDFs</a>
             </div>
         </div>
@@ -1374,6 +1454,88 @@
         </div>
     </section>
 
+    <!-- Section: Árbol Genealógico Dinástico Generación por Generación -->
+    <section id="arbol" style="background: rgba(7, 11, 20, 0.98); border-top: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Arbre Généalogique & Lignée Directe</span>
+                <h2 class="section-title">El Linaje Generacional de la Casa</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Secuencia genealógica documentada desde el I Duque Antoine Antomarchi (1720) en Córcega, pasando por la alianza con los Agostini y Mattei, la llegada a Cuba con Don Francisco, hasta el tatarabuelo Benjamin Antomarchi y el heredero actual.</p>
+            </div>
+
+            <div class="genealogy-flow-wrap">
+                <div class="tree-generations-grid">
+                    <!-- Gen 1: Antoine Antomarchi & Anne Agostini -->
+                    <div class="gen-node">
+                        <span class="gen-number">1ª Generación · Patriarcas</span>
+                        <h4 class="gen-name-primary">Antoine Antonmarchí</h4>
+                        <div class="gen-dates">1720 – Fallecido (Córcega)</div>
+                        <div class="gen-spouse">
+                            <i class="fas fa-ring"></i> c.c. <strong>Anne Agostini</strong><br>
+                            <span style="font-size: 12px; color: var(--gold-primary);">(1730 – Fallecida)</span>
+                        </div>
+                        <p class="gen-role">I Titular de la estirpe en Morsiglia. Enlace fundador entre los Antomarchi y el linaje patricio Agostini.</p>
+                    </div>
+
+                    <!-- Gen 2: Jean Antomarchi & Brigitte Mattei -->
+                    <div class="gen-node">
+                        <span class="gen-number">2ª Generación · Alianza Mattei</span>
+                        <h4 class="gen-name-primary">Jean Antonmarchí</h4>
+                        <div class="gen-dates">1750 – Fallecido (Cap Corse)</div>
+                        <div class="gen-spouse">
+                            <i class="fas fa-ring"></i> c.c. <strong>Brigitte Mattei</strong><br>
+                            <span style="font-size: 12px; color: var(--gold-primary);">(1765 – Fallecida)</span>
+                        </div>
+                        <p class="gen-role">Señor de Stoppielli. Incorpora la nobleza militar de los Mattei al patrimonio dinástico familiar.</p>
+                    </div>
+
+                    <!-- Gen 3: Antoine / François Antomarchi & Anne Marie Alexandrine Etienne -->
+                    <div class="gen-node" style="border-color: var(--gold-primary); background: rgba(88, 17, 26, 0.3);">
+                        <span class="gen-number" style="color: #ECC86C;">3ª Generación · Cuba</span>
+                        <h4 class="gen-name-primary">Antoine / François Antomarchi</h4>
+                        <div class="gen-dates">1792 – Fallecido (Santiago de Cuba)</div>
+                        <div class="gen-spouse">
+                            <i class="fas fa-ring"></i> c.c. <strong>Anne Marie Alexandrine Etienne</strong><br>
+                            <span style="font-size: 12px; color: var(--gold-primary);">«Doña Ana María» (1817–1875)</span>
+                        </div>
+                        <p class="gen-role">El célebre médico («Don Francisco»). Arriba en 1837 al Puerto de Santiago de Cuba e instaura las fincas de Palma Soriano.</p>
+                    </div>
+
+                    <!-- Gen 4: Benjamin Antomarchi & Braulia Bisot -->
+                    <div class="gen-node" style="border-color: var(--gold-primary);">
+                        <span class="gen-number" style="color: #ECC86C;">4ª Generación · Tatarabuelo</span>
+                        <h4 class="gen-name-primary">Benjamin Antonmarchí, Sr.</h4>
+                        <div class="gen-dates">Fallecido (Oriente de Cuba)</div>
+                        <div class="gen-spouse">
+                            <i class="fas fa-ring"></i> c.c. <strong>Braulia Bisot</strong><br>
+                            <span style="font-size: 12px; color: var(--gold-primary);">(Fallecida)</span>
+                        </div>
+                        <p class="gen-role">Tatarabuelo del actual titular. Consolida la rama de Palma Soriano y la preservación fiduciaria de la Casa.</p>
+                    </div>
+
+                    <!-- Gen Contemporánea: Abel Antonio Ruiz Rodes -->
+                    <div class="gen-node" style="border: 2px solid var(--gold-primary); background: rgba(20, 30, 54, 0.95); box-shadow: 0 0 20px rgba(212,175,55,0.3);">
+                        <span class="gen-number" style="color: var(--gold-light);">Actualidad · Chef de Maison</span>
+                        <h4 class="gen-name-primary" style="color: #FFFFFF;">Abel Antonio Ruiz Rodés</h4>
+                        <div class="gen-dates">S.A.S. Abel Antonio Rodes Antomarchi</div>
+                        <div class="gen-spouse" style="border-top-color: var(--gold-primary);">
+                            <i class="fas fa-crown"></i> <strong>Duque de Morsiglia & Ajaccio</strong><br>
+                            <span style="font-size: 12px; color: var(--gold-light);">Agostini-Mattei</span>
+                        </div>
+                        <p class="gen-role">Jefe de la Casa y depositario soberano de los títulos, archivos y memoria fiduciaria de la Maison Ducale.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <a href="javascript:void(0)" onclick="openLightbox('images/arbol_genealogico_myheritage.png', 'Registro Oficial del Árbol Genealógico · MyHeritage: Línea Directa desde Antoine Antomarchi (1720) hasta Benjamin Antomarchi y Abel Antonio Ruiz Rodés')" class="btn-secondary" style="font-size: 11px; padding: 12px 24px;">
+                        <i class="fas fa-sitemap"></i> Ver Archivo Genealógico Documental MyHeritage
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section 2: Crónica Dinástica (1804 -> François Antomarchi -> Santiago de Cuba & Palma Soriano) -->
     <section id="cronica" class="chronicle-section">
         <div class="container">
@@ -1381,67 +1543,77 @@
                 <span class="section-tag">Épopée Impériale & Terres d'Outre-Mer</span>
                 <h2 class="section-title">Crónica Dinástica & El Legado en Cuba</h2>
                 <div class="section-divider"></div>
-                <p class="section-desc">Desde las Lettres Patentes de Napoleón I en Saint-Cloud hasta la boda en Cuba de François Antomarchi (Don Francisco) con Anne Marie Alexandrine Etienne (Doña Ana María) y sus tierras en Palma Soriano.</p>
+                <p class="section-desc">Desde las Lettres Patentes de Napoleón I en Saint-Cloud hasta la boda en Cuba de François Antomarchi (Don Francisco) con Anne Marie Alexandrine Etienne (Doña Ana María), el legado de Benjamin Antomarchi y las tierras de Palma Soriano.</p>
             </div>
 
             <div class="timeline-ducal">
-                <!-- 1804: 1er Duque -->
+                <!-- 1720-1804: Fundación y 1er Duque Antoine Antomarchi -->
                 <div class="timeline-item left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="timeline-year">1804</span>
-                        <h4 class="timeline-title">1er Duque: Jean-François Antomarchi Agostini</h4>
-                        <p class="timeline-body">Por Decreto Imperial en el Palacio de Saint-Cloud, S.M. Napoleón I confiere las <span class="timeline-highlight">Lettres Patentes de Érection Ducale</span> a Jean-François Antomarchi Agostini, confirmando el feudo de Morsiglia, el Château de Stoppielli y el blasón de 4 cuarteles con 7 plumas ducales.</p>
+                        <span class="timeline-year">1720 – 1804</span>
+                        <h4 class="timeline-title">I Generación: Antoine Antomarchi & Anne Agostini</h4>
+                        <p class="timeline-body">Unión del solar feudal de Morsiglia con el linaje patricio de <span class="timeline-highlight">Anne Agostini</span>. Consolidación de la autoridad de la Casa en el Château de Stoppielli y confirmación solemne de la dignidad ducal en Saint-Cloud.</p>
                     </div>
                 </div>
 
-                <!-- 1819-1821: 2º Duque François Antommarchi en Santa Elena -->
+                <!-- II Generación: Jean Antomarchi & Brigitte Mattei -->
                 <div class="timeline-item right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
+                        <span class="timeline-year">1750 – 1792</span>
+                        <h4 class="timeline-title">II Generación: Jean Antomarchi & Brigitte Mattei</h4>
+                        <p class="timeline-body">Señor de Stoppielli en Cap Corse. Alianza con la nobleza militar del norte corso a través de <span class="timeline-highlight">Brigitte Mattei</span>, padre del eminente médico imperial que llevaría el apellido al Nuevo Mundo.</p>
+                    </div>
+                </div>
+
+                <!-- 1819-1821: Antoine / François Antomarchi en Santa Elena -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-year">1819 – 1821</span>
-                        <h4 class="timeline-title">2º Duque: Dr. François-Carlo Antommarchi en Santa Elena</h4>
-                        <p class="timeline-body">Brillante anatomista y médico personal del Emperador en su destierro de Longwood. Acompañó a Napoleón en su lecho de muerte, modeló la célebre <span class="timeline-highlight">Mascarilla Mortuoria</span> original y publicó las monumentales memorias *«Les Derniers Moments de Napoléon»*.</p>
+                        <h4 class="timeline-title">El Médico del Emperador en Santa Elena</h4>
+                        <p class="timeline-body">Brillante anatomista y médico personal de Napoleón Bonaparte en Longwood. Asistió al Emperador en su lecho de muerte, modeló la <span class="timeline-highlight">Mascarilla Mortuoria</span> original y publicó *«Les Derniers Moments de Napoléon»*.</p>
                     </div>
                 </div>
 
                 <!-- 1837: Entrada por el Puerto de Santiago de Cuba -->
-                <div class="timeline-item left">
+                <div class="timeline-item right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="timeline-year">1837</span>
                         <h4 class="timeline-title">Entrada por el Puerto de Santiago de Cuba</h4>
-                        <p class="timeline-body">Tras recorrer Europa y Norteamérica, el Dr. François Antommarchi arriba al Caribe. Los <span class="timeline-highlight">archivos marítimos y portuarios de Santiago de Cuba</span> registran su solemne entrada, donde fue recibido con los más altos honores por las autoridades coloniales y la élite caribeña.</p>
+                        <p class="timeline-body">Arribo solemne documentado en los <span class="timeline-highlight">archivos marítimos del Puerto de Santiago de Cuba</span>. Recibimiento con honores de estado por las autoridades coloniales y la sociedad criolla.</p>
                     </div>
                 </div>
 
-                <!-- 1837-1838: Boda en Cuba y Nombres Españolizados -->
-                <div class="timeline-item right">
+                <!-- 1837-1838: Boda en Cuba: Don Francisco & Doña Ana María -->
+                <div class="timeline-item left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="timeline-year">1837 – 1838</span>
                         <h4 class="timeline-title">Enlace en Cuba: Don Francisco & Doña Ana María</h4>
-                        <p class="timeline-body">Contrajo matrimonio solemne con <span class="timeline-highlight">Anne Marie Alexandrine Etienne</span>. En los registros eclesiales y notariales de la Isla, sus nombres se españolizaron formalmente, siendo conocidos y reverenciados por la sociedad criolla como <span class="timeline-highlight">«Don Francisco»</span> y <span class="timeline-highlight">«Doña Ana María»</span>.</p>
+                        <p class="timeline-body">Matrimonio con <span class="timeline-highlight">Anne Marie Alexandrine Etienne (1817–1875)</span>. En los protocolos eclesiásticos sus nombres se españolizan como <span class="timeline-highlight">«Don Francisco»</span> y <span class="timeline-highlight">«Doña Ana María»</span>, fijando la hacienda San Antonio en Palma Soriano.</p>
                     </div>
                 </div>
 
-                <!-- 1838: Tierras y Haciendas en Palma Soriano -->
-                <div class="timeline-item left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-year">1838</span>
-                        <h4 class="timeline-title">Las Tierras de Palma Soriano & Filantropía</h4>
-                        <p class="timeline-body">Don Francisco adquiere y consolida extensas fincas y plantaciones rústicas en <span class="timeline-highlight">Palma Soriano (San Antonio y El Palmar)</span>. Abre dispensarios médicos donde practica cirugías de cataratas gratuitas a los pobladores humildes, dejando una huella imborrable.</p>
-                    </div>
-                </div>
-
-                <!-- Siglos XX - XXI: Transmisión y Heredero Actual -->
+                <!-- IV Generación: Benjamin Antomarchi & Braulia Bisot -->
                 <div class="timeline-item right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
+                        <span class="timeline-year">Siglo XIX</span>
+                        <h4 class="timeline-title">IV Generación: Benjamin Antomarchi & Braulia Bisot</h4>
+                        <p class="timeline-body">Tatarabuelo del actual titular. Casado con <span class="timeline-highlight">Braulia Bisot</span> en Oriente de Cuba, preservó la custodia de los títulos territoriales y la memoria genealógica de la estirpe.</p>
+                    </div>
+                </div>
+
+                <!-- Época Actual: S.A.S. Abel Antonio Ruiz Rodes -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-year">Época Actual</span>
-                        <h4 class="timeline-title">Transmisión & S.A.S. Abel Antonio Rodes Antomarchi</h4>
-                        <p class="timeline-body">El patrimonio dinástico, la memoria documental y los derechos de la Casa se transmiten de generación en generación en línea directa hasta el actual Jefe de la Casa y Duque de Morsiglia: <span class="timeline-highlight">S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei</span>.</p>
+                        <h4 class="timeline-title">Jefatura Dinástica: S.A.S. Abel Antonio Ruiz Rodés</h4>
+                        <p class="timeline-body">El patrimonio dinástico y los derechos de la Casa son asumidos por <span class="timeline-highlight">S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei</span>, uniendo los cuatro apellidos en la representación soberana de la Maison Ducale.</p>
                     </div>
                 </div>
             </div>
@@ -1462,7 +1634,7 @@
                         Al establecerse en la sociedad colonial de Cuba, el ilustre médico imperial <strong>François Antomarchi</strong> se desposó con <strong>Anne Marie Alexandrine Etienne</strong>. Conforme al protocolo de la época en los libros de protocolo notarial y registros parroquiales de Santiago de Cuba, sus nombres fueron formalmente españolizados.
                     </p>
                     <p style="font-size: 16px; color: var(--parchment-muted); margin-bottom: 14px;">
-                        Desde entonces fueron conocidos con gran respeto y afecto como <strong style="color: var(--gold-light);">Don Francisco</strong> y <strong style="color: var(--gold-light);">Doña Ana María</strong>. De esta unión matrimonial y su arraigo en las haciendas cafetaleras de Palma Soriano nació la rama genealógica de la cual proviene la herencia transmitida hasta el actual Duque de Morsiglia.
+                        Desde entonces fueron conocidos con gran respeto y afecto como <strong style="color: var(--gold-light);">Don Francisco</strong> y <strong style="color: var(--gold-light);">Doña Ana María</strong>. De esta unión matrimonial y su arraigo en las haciendas cafetaleras de Palma Soriano nació la rama genealógica que continuó en su hijo <strong>Benjamin Antomarchi</strong> hasta el actual Duque de Morsiglia.
                     </p>
                     <div style="font-size: 14px; font-style: italic; color: var(--gold-primary);">
                         * Daguerrotipo original de época conservado en los archivos fiduciarios de la Casa Ducal.
@@ -1781,6 +1953,7 @@
             <div class="footer-links">
                 <a href="#hero">Inicio</a>
                 <a href="#linaje">Esencia & Linaje</a>
+                <a href="#arbol">Árbol Genealógico</a>
                 <a href="#cronica">Crónica Histórica & Cuba</a>
                 <a href="#chateau">Château de Stoppielli</a>
                 <a href="#lifestyle">Modo de Vida</a>

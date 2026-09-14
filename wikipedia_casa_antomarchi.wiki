@@ -7,9 +7,9 @@
 | estado                = Dinastía histórica
 | país                  = {{bandera|Francia}} [[Francia]] / {{bandera|Córcega}} [[Córcega]]
 | títulos               = [[Duque de Morsiglia y Ajaccio]], [[Señor de Stoppielli]], Par del Primer Imperio
-| fundador              = [[Jean-François Antomarchi Agostini]]
+| fundador              = [[Antoine Antonmarchí]] (I Titular) / [[Jean-François Antomarchi Agostini]]
 | fecha_fundación       = [[1804]] (confirmación por ''[[Lettres Patentes]]'' imperiales)
-| actual_titular        = [[Abel Antonio Rodes Antomarchi|S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei]]
+| actual_titular        = [[Abel Antonio Rodes Antomarchi|S.A.S. Abel Antonio Ruiz Rodés / Abel Antonio Rodes Antomarchi Agostini-Mattei]]
 | solar_ancestral       = [[Château de Stoppielli]] ([[Morsiglia]], [[Cap Corse]])
 | ramas_colaterales     = [[Agostini]], [[Mattei]], [[Rodes]]
 | religión              = [[Catolicismo]]
@@ -21,25 +21,27 @@ La '''Casa de Antomarchi de Morsiglia & Ajaccio''' (en francés: ''Maison Ducale
 
 El feudo y solar solariego de la dinastía se encuentra en el [[Château de Stoppielli]], en la comuna corsa de [[Morsiglia]] ([[Cap Corse]]). La Casa reúne a través de alianzas matrimoniales inmemoriales los linajes de [[Antomarchi]], [[Agostini]] y [[Mattei]], enlazados en época contemporánea con la rama patrilineal [[Rodes]], situándose su actual jefatura en [[Abel Antonio Rodes Antomarchi|S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei]].<ref name="registre_chancellerie">Chancellerie de la Maison Ducale Antomarchi, ''Archives d'État, Titre Souverain et Déclarations Séquentielles (1804–2026)'', Luxembourg, 2026.</ref>
 
-== Historia dinástica ==
+== Genealogía y Secuencia Generacional ==
+De acuerdo con los registros genealógicos y notariales históricos, la línea directa de descendencia de la Casa se estructura en las siguientes generaciones:<ref name="myheritage_tree">Archivo Genealógico Familiar, ''Árbol y Sucesión Dinástica de la Casa Antomarchi'', Registro Documental de Familia, 2024.</ref>
 
-=== El Solar Ancestral: Château de Stoppielli y Cap Corse ===
-La presencia del linaje Antomarchi en la comarca septentrional de [[Cap Corse]] se remonta a la época de administración genovesa de la isla. El centro neurálgico del feudo fue establecido en el [[Château de Stoppielli]] (Morsiglia), una estructura señorial fortificada flanqueada por una [[Torre genovesa|torre atalaya]] construida sobre acantilados rocosos para vigilar el [[Golfo de Saint-Florent]] y repeler las incursiones de piratas berberiscos en el mar Tirreno.<ref name="capcorse_hist">Giacobbi, F., ''Histoire féodale et seigneuriale du Cap Corse'', Bastia, 1932, pp. 112-118.</ref> El dominio territorial integraba viñedos históricos de Moscatello sobre terrazas escalonadas de piedra.
+=== 1ª Generación: Los Patriarcas en Córcega ===
+* '''Antoine Antonmarchí''' (n. 1720), I Titular de la estirpe en Morsiglia.
+* Contrajo matrimonio con '''Anne Agostini''' (n. 1730), uniendo la casa solariega de Stoppielli con el antiguo linaje patricio y jurista de los Agostini.
 
-=== Fundación Imperial de 1804: Jean-François Antomarchi Agostini ===
-Con la proclamación del [[Primer Imperio Francés]], la corona napoleónica formalizó el estatuto de la nobleza corsa leal al régimen imperial. En 1804, [[Jean-François Antomarchi Agostini]] fue investido como primer titular con rango de Duque de Morsiglia y Ajaccio mediante decreto registrado ante el Consejo del Sello de Títulos en Saint-Cloud, confirmándole el derecho a portar las armas ducales con toque de siete plumas de avestruz.<ref name="saintcloud1804"/>
+=== 2ª Generación: Alianza con la Casa Mattei ===
+* '''Jean Antonmarchí''' (n. 1750), Señor de Stoppielli.
+* Contrajo matrimonio con '''Brigitte Mattei''' (n. 1765), integrando la nobleza militar de los Mattei de Cap Corse en el linaje familiar.
 
-=== El 2º Duque Dr. François-Carlo Antommarchi y la Campaña de Santa Elena ===
-El segundo duque de la Casa, el prestigioso médico y anatomista [[François-Carlo Antommarchi]] (1780–1838), fue designado en 1819 por la familia Bonaparte como médico de cabecera de [[Napoleón I]] en su destierro de [[Santa Elena (isla)|Santa Elena]].<ref name="napoleon_mem">Antommarchi, F., ''Les Derniers Moments de Napoléon'', 2 vols., Chez Baudouin Frères, París, 1825.</ref> 
-Antommarchi asistió al Emperador hasta su fallecimiento en 1821, realizó la autopsia anatómica oficial y confeccionó el molde de yeso original de la célebre [[Mascarilla mortuoria de Napoleón]].<ref name="mascarilla">Wilson, J., «The Antommarchi Death Mask of Napoleon: Provenance and Iconography», ''Journal of Napoleonic Studies'', vol. 22, 2011, pp. 101-119.</ref>
+=== 3ª Generación: El Médico Imperial y el Asentamiento en Cuba ===
+* '''Antoine / François Antonmarchí''' (n. 1792 – f. Santiago de Cuba). Célebre anatomista y médico de cabecera de [[Napoleón I]] en [[Santa Elena (isla)|Santa Elena]], autor de la [[mascarilla mortuoria de Napoleón]] y de las memorias ''Les Derniers Moments de Napoléon'' (1825).
+* En 1837 arribó al puerto de [[Santiago de Cuba]], donde contrajo matrimonio con '''Anne Marie Alexandrine Etienne Stephanie''' (1817–1875). Sus nombres fueron formalmente españolizados en las actas notariales como '''«Don Francisco»''' y '''«Doña Ana María»''', estableciendo haciendas cafetaleras y dispensarios médicos en [[Palma Soriano]] (fincas San Antonio y El Palmar).
 
-=== La Rama de Ultramar en Cuba: Don Francisco y Doña Ana María (1837) ===
-Tras publicar sus obras científicas en París y viajar por Europa y América, el Dr. François Antomarchi arribó en 1837 a la [[Capitanía General de Cuba]], registrándose su entrada solemne en los archivos portuarios y marítimos de [[Santiago de Cuba]].<ref name="ahpsc_cuba">Archivo Histórico Provincial de Santiago de Cuba (AHPSC), ''Registro Marítimo y Entradas Coloniales'', legajo 418, 1837.</ref>
+=== 4ª Generación: Consolidación en Oriente de Cuba ===
+* '''Benjamin Antonmarchí, Sr.''' (tatarabuelo del actual titular).
+* Contrajo matrimonio con '''Braulia Bisot''', consolidando el patrimonio rústico y la preservación fiduciaria de los derechos dinásticos en la región oriental de Cuba.
 
-En la Isla contrajo matrimonio con [[Anne Marie Alexandrine Etienne]]. En los protocolos notariales y eclesiásticos coloniales de la época, sus nombres fueron formalmente españolizados como '''«Don Francisco»''' y '''«Doña Ana María»'''.<ref name="boda_acta">Parroquia Mayor de Santiago de Cuba, ''Libro de Matrimonios y Alianzas Familiares'', Tomo IX, folio 114, 1837.</ref> La familia fijó sus posesiones rústicas y haciendas cafetaleras en el término oriental de [[Palma Soriano]] (fincas San Antonio y El Palmar), donde Don Francisco fundó dispensarios gratuitos en los que practicó las primeras cirugías de cataratas a la población rural.<ref name="palma_soriano">Registro de la Propiedad y Tierras Rústicas de Palma Soriano, ''Títulos de Fincas San Antonio y El Palmar'', Tomo XII, folio 84, 1838.</ref>
-
-=== Transmisión Hereditaria Contemporánea ===
-A través de la descendencia originada en Cuba y su posterior retorno de representación fiduciaria en Europa, la jefatura de la Casa y sus derechos patrimoniales e históricos recaen en [[Abel Antonio Rodes Antomarchi|S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei]], quien custodia los archivos de cancillería y promueve la conservación histórica del linaje.<ref name="registre_chancellerie"/>
+=== Época Contemporánea: Sucesión y Jefatura de la Casa ===
+* Trasmitido el legado por vía directa a través de las ramas familiares en Oriente de Cuba y su entronque con la familia [[Rodes]], la jefatura dinástica y representación soberana recae en '''S.A.S. Abel Antonio Ruiz Rodés / Abel Antonio Rodes Antomarchi Agostini-Mattei''', Duque de Morsiglia y Ajaccio.
 
 == El Quatuor de Apellidos ==
 La genealogía institucional de la Casa se define por cuatro estirpes nobiliarias:
@@ -65,7 +67,7 @@ El blasón oficial de la Casa Ducal fue fijado en 1804 y responde a las siguient
 
 == Fondos Documentales y Archivos ==
 La Casa Ducal conserva un cuerpo de documentos históricos de estado:
-# '''''Lettres Patentes d'Érection Ducale''''' (Palacio de Saint-Cloud, 1804), otorgadas por Napoleón I a Jean-François Antomarchi Agostini.
+# '''''Lettres Patentes d'Érection Ducale''''' (Palacio de Saint-Cloud, 1804), otorgadas por Napoleón I a la Casa Antomarchi.
 # '''''Décret Impérial de Saint-Cloud sur Vélin Enluminé''''' (1804), con sello imperial y capitulares orladas.
 # '''''Daguerrotipo Matrimonial de 1837''''' (Santiago de Cuba), testimonio fotográfico del enlace entre François Antomarchi (Don Francisco) y Anne Marie Alexandrine Etienne (Doña Ana María).
 # '''''Diploma de Reconocimiento del Heredero''''', instrumento notarial de confirmación de la dignidad ducal en S.A.S. Abel Antonio Rodes Antomarchi Agostini-Mattei.
